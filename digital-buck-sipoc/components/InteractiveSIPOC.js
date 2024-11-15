@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronRight, Info, Search, Download, Filter } from 'lucide-react';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { ChevronDown, ChevronRight, Info, Search, Download } from 'lucide-react';
 
 // Detailed tooltips data
 const tooltips = {
@@ -61,11 +60,11 @@ const SIPOCSection = ({ title, items, color, searchTerm, filter }) => {
         />
       </div>
       
-      {showInfo && (
-        <Alert className="m-2 bg-blue-50">
-          <AlertTitle>About {title}</AlertTitle>
-          <AlertDescription>{getInfoContent(title)}</AlertDescription>
-        </Alert>
+{showInfo && (
+        <div className="m-2 p-4 bg-blue-50 rounded-lg">
+          <p className="font-medium">About {title}</p>
+          <p className="mt-1 text-sm">{getInfoContent(title)}</p>
+        </div>
       )}
 
       {isExpanded && (
