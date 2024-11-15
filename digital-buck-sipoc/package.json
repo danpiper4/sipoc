@@ -1,6 +1,3 @@
-The React.js dependency is included in your package.json - it's listed as "react" and "react-dom". However, let's update your package.json versions to be consistent. Click on package.json and edit it to:
-
-```json
 {
   "name": "digital-buck-sipoc",
   "version": "1.0.0",
@@ -22,6 +19,3 @@ The React.js dependency is included in your package.json - it's listed as "react
     "postcss": "8.4.0"
   }
 }
-```
-
-After updating, try deploying again with a new project name like "sipoc-diagram-v3".
